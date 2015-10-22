@@ -1,0 +1,18 @@
+#!/usr/bin/perl -w
+
+# Description
+# ===========
+# This utility is designed to play with string termination by
+# matching first line sequence with last line sequence.
+#  
+
+
+# any first line string sequence 
+print STDOUT << "bla bla";
+
+bla bla bla
+
+bla bla
+# which matches with the last line sequence becomes like
+# string beginning and termination and no need to worry about using 
+# quotation marks in between 
