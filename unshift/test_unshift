@@ -1,0 +1,12 @@
+#!/usr/bin/perl -w
+
+# Description
+# ===========
+#  This utility is designed to play with unshift function
+#  
+
+# @INC is a special Perl variable that is the equivalent to the shell's PATH variable. Whereas PATH contains a list of directories to search for executables, @INC contains a list of directories from which Perl modules and libraries can be loaded.
+print STDOUT "@INC\n";
+# unshift adds provided list infront of the array
+unshift @INC, $ENV{'PATH'};
+print STDOUT "@INC\n";
