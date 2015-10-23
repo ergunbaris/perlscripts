@@ -1,0 +1,19 @@
+#!/usr/bin/perl
+# adding -w on the shebang line is the older way of enabling warnings
+# Description
+# ===========
+# use warnings demo
+#  
+
+use strict;
+# use warnings with 5.010 and newer versions to enable and disable
+# if we did only say use 5.010 it wouldnt show the unassigned variable
+# when compiling
+use warnings;
+use 5.010;
+
+print 'OK';
+my $x;
+say $x;
+$x = 42;
+say $x;
