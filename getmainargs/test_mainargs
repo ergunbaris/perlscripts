@@ -1,0 +1,31 @@
+#!/usr/bin/perl
+#
+# Description
+# ===========
+# use of main args
+#  
+
+use strict;
+use Getopt::Long;
+use warnings;
+use 5.010;
+
+sub main{
+    my $arg1;
+    my $arg2;
+    my $arg3;
+    my $arg4 = 0;
+
+     # Get the command line options.
+    GetOptions ("a|arg1=s"       => \$arg1,
+                "b|arg2=s"       => \$arg2,
+                "c|arg3=s"       => \$arg3,
+                "l"              => \$arg4);
+
+    say $arg1;
+    say $arg2;
+    say $arg3;
+    say $arg4;
+}
+
+main();
